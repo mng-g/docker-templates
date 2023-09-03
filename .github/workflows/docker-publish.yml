@@ -23,5 +23,6 @@ jobs:
           tags: v0.1, latest
           registry: docker.io
           dockerfile: 04-GO/Dockerfile
+          buildArgs: FRAMEWORK=fiber
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
